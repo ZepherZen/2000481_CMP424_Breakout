@@ -20,15 +20,15 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
+ 
         deltaTime = clock.restart().asSeconds();
-
+ 
         gameManager.update(deltaTime);
-
+ 
         window.clear();
         gameManager.render();
         window.display();
     }
-
+ 
     return 0;
 }
